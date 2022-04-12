@@ -142,8 +142,8 @@ nav{
 
 .mailto{
     text-decoration: none;
-    color: white;
-    background:#2ea550 ;
+    color: #ffffff;
+    background:#1e86ed ;
     padding: 10px;
     position: relative;
     top: 20px;
@@ -179,6 +179,39 @@ nav{
 
 /*===============================SECTION SLODKIEWICZ, PIC============================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============================================FOOTER=============================================*/
 
 footer{
@@ -189,7 +222,7 @@ footer{
     width: 100%;
     background: #1e86ed;
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #ffffff;
     font-size: 1.2em;
 }
 
@@ -213,7 +246,7 @@ footer{
     padding: 10px;
 }
 .foot_about img{
-    padding: 20px;
+    padding: 10px;
 }
 
 .foot_contact{
@@ -221,7 +254,6 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-weight: bold;
 }
 .foot_phoem{
     padding: 10px;
@@ -236,8 +268,7 @@ footer{
 
 }
 .social{
-   width: 50px;
-    padding: 5px;
+    padding: 2px;
     opacity: 0.8;
 }
 
