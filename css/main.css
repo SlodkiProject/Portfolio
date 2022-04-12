@@ -180,6 +180,82 @@ nav{
 /*===============================SECTION SLODKIEWICZ, PIC============================*/
 
 
+footer{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #2ea550;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.2em;
+}
+
+
+
+.foot_about, .foot_contact, .foot_social{
+    width: 33.333333%;
+}
+
+
+
+.foot_about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+.foot_about h4{
+    padding: 10px;
+}
+.foot_about img{
+    padding: 20px;
+}
+
+.foot_contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.foot_phoem{
+    padding: 10px;
+}
+
+.foot_social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.social{
+   width: 50px;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.social:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*===============================USTAWIENIA HEADERA @MEDIA============================*/
 
@@ -283,5 +359,15 @@ nav{
         margin-top: 20px;
     }
 
+    footer{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .foot_about, .foot_contact, .foot_social{
+        width: 100%;
+    }
 }
+
 /*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
