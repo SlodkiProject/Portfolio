@@ -197,7 +197,7 @@ nav{
             background: linear-gradient(90deg, rgba(12, 29, 65, 1) 0%, rgba(4, 13, 33, 1) 87%, rgba(4, 13, 33, 1) 100%);
             width: 100%;
             min-height: auto;
-            border-bottom: 1px solid #2ea550;
+            border-bottom: 3px solid #2ea550;
         }
 
         label {
