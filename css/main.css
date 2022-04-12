@@ -179,6 +179,7 @@ nav{
 
 /*===============================SECTION SLODKIEWICZ, PIC============================*/
 
+/*============================================FOOTER=============================================*/
 
 footer{
     margin: auto;
@@ -186,9 +187,9 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #2ea550;
+    background: #1e86ed;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: white;
     font-size: 1.2em;
 }
 
@@ -245,6 +246,7 @@ footer{
     cursor: pointer;
 }
 
+/*============================================FOOTER=============================================*/
 
 
 
@@ -273,7 +275,6 @@ footer{
             background: linear-gradient(90deg, rgba(12, 29, 65, 1) 0%, rgba(4, 13, 33, 1) 87%, rgba(4, 13, 33, 1) 100%);
             width: 100%;
             min-height: auto;
-            border-bottom: 3px solid #2ea550;
         }
 
         label {
@@ -358,16 +359,27 @@ footer{
         height: auto;
         margin-top: 20px;
     }
+}
+/*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
 
-    footer{
+
+
+/*===============================USTAWIENIA FOOTER @MEDIA============================*/
+
+
+
+@media screen and (max-width: 768px) {
+    footer {
         width: 100%;
         flex-wrap: wrap;
         flex-direction: column;
     }
 
-    .foot_about, .foot_contact, .foot_social{
+    .foot_about, .foot_contact, .foot_social {
         width: 100%;
     }
 }
 
-/*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
+
+
+/*===============================USTAWIENIA FOOTER @MEDIA============================*/
