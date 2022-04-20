@@ -65,25 +65,14 @@ nav{
 
 
 
-/*----------------3-------------UKRYCIE CHECKBOX I BURGERA ZAMIANA IKON------------------------*/
+/*----------------3-------------UKRYCIE CHECKBOX I BURGERA------------------------*/
     label, #burger{
         display: none;
     }
-    .close{
-    display: none;
-}
-    .close{
-    width: 24px;
-    height: 24px;
-}
-/*----------------3-------------UKRYCIE CHECKBOX I BURGERA ZAMIANA IKON------------------------*/
+/*----------------3-------------UKRYCIE CHECKBOX I BURGERA------------------------*/
 
 
 /*===============================USTAWIENIA HEADERA============================*/
-
-
-
-
 
 
 
@@ -280,6 +269,7 @@ footer{
 
 
 
+
 /*===============================USTAWIENIA HEADERA @MEDIA============================*/
 
 @media screen and (max-width: 768px) {
@@ -320,13 +310,6 @@ footer{
             top: 50px;
             width: 100%;
         }
-        #burger:checked ~ label .open{
-            display: none;
-        }
-
-        #burger:checked ~ label .close{
-        display: block;
-    }
 
         ul {
             flex-direction: column;
