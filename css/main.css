@@ -96,7 +96,7 @@ nav{
 
 
 
-/*===============================SECTION SLODKIEWICZ, PIC.============================*/
+/*===============================SECTION SLODKIEWICZ, MOON ROCKET============================*/
 
 
 /*-----------------------------GŁÓWNY KONTENER------------------------*/
@@ -172,7 +172,7 @@ nav{
 
 
 
-/*-----------------------------PRAWA STRONA ZDJĘCIE TYPA------------------------*/
+/*-----------------------------PRAWA STRONA ANIMACJA MOON ROCKET------------------------*/
 
 .article_right{
     display: flex;
@@ -182,11 +182,28 @@ nav{
     right: 50px;
 }
 
-/*-----------------------------PRAWA STRONA ZDJĘCIE TYPA------------------------*/
+#moon{
+    width: 400px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rocket{
+    padding: 50px;
+    position:absolute;
+    width:410px;
+    height:410px;
+    animation-name: spin;
+    animation:spin 5s linear infinite;
+}
+
+/*-----------------------------PRAWA STRONA ANIMACJA MOON ROCKET------------------------*/
 
 
 
-/*===============================SECTION SLODKIEWICZ, PIC============================*/
+/*===============================SECTION SLODKIEWICZ, MOON ROCKET============================*/
 
 
 
@@ -295,7 +312,7 @@ footer{
             min-height: auto;
         }
 
-        label {
+        label{
             display: block;
             margin-right: 20px;
         }
@@ -340,7 +357,7 @@ footer{
 /*===============================USTAWIENIA HEADERA @MEDIA============================*/
 
 
-/*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
+/*===============================USTAWIENIA SECTION IMIĘ NAZWISKO MOON ROCKET @MEDIA============================*/
 
 
 @media screen and (max-width: 768px) {
@@ -379,6 +396,15 @@ footer{
         position: relative;
         left: 0;
     }
+    .rocket{
+        margin-top: 40px;
+        width:350px;
+        height:350px;
+    }
+    #moon{
+        width:340px;
+        margin-top: 40px;
+    }
 }
 /*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
 
@@ -406,48 +432,8 @@ footer{
 
 
 
+/*===============================KEYFRAMES MOON ROCKET============================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#moon{
-    width: 400px;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rocket{
-    padding: 50px;
-    position:absolute;
-    width:410px;
-    height:410px;
-    animation-name: spin;
-    animation:spin 5s linear infinite;
-}
 @keyframes spin{
     0% { -webkit-transform: rotate(0deg);transform:rotate(0deg);}
     25% { -webkit-transform: rotate(90deg);transform:rotate(90deg);}
@@ -455,14 +441,209 @@ footer{
     75% { -webkit-transform: rotate(270deg);transform:rotate(270deg);}
     100% { -webkit-transform: rotate(360deg);transform:rotate(360deg);}
 }
-@media screen and (max-width: 700px){
-    .rocket{
-        margin-top: 40px;
-        width:350px;
-        height:350px;
+
+/*===============================KEYFRAMES MOON ROCKET============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================================FORM========================================*/
+
+
+
+/*------------------------------USTAWIENIA KONTENERA---------------------------------*/
+
+
+.container_form{
+    width: 80%;
+    display: flex;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+.form_left, .form_right{
+    width: 50%;
+    padding-top: 20px;
+}
+/*-------------------------------USTAWIENIA KONTENERA---------------------------------*/
+
+
+/*-------------------------------FORM CONTACT LEFT SITE--------------------------------*/
+
+
+.form_left{
+    font-family: 'Roboto', sans-serif;
+    color: #0c1c40;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form_left p{
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.adress_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.phone_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.email_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+/*-----------------------------FORM CONTACT LEFT SITE--------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------------FORM CONTACT RIGHT SITE------------------------------*/
+
+
+.form_right{
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    font-size: 0.7em;
+    flex-direction: column;
+    border-radius: 6px;
+}
+
+.text_size{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #f0f1f8;
+    font-size: 2em;
+}
+
+
+
+
+.input_box{
+    padding: 5px;
+}
+
+
+
+textarea{
+    min-height: 110px;
+    border: none;
+    border-radius: 6px;
+    background: #f0f1f8;
+    width: 100%;
+    font-size: 2.5em;
+}
+
+
+
+
+.buttonn{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.8em;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #1e85ec;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    width: 120px;
+}
+.buttonn:hover{
+    background: rgba(30,133,236,0.84);
+    cursor: pointer;
+}
+
+
+
+
+
+.contact_us{
+   font-size: 3em;
+    text-transform: uppercase;
+    color: rgba(11,28,63,0.84);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+.no_rot{
+    display: block;
+}
+/*-----------------------------FORM CONTACT RIGHT SITE------------------------------*/
+
+
+
+
+
+
+/*-----------------------------FORM CONTACT MEDIA-----------------------------------*/
+
+
+@media screen and (max-width: 768px) {
+    .container_form {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column-reverse;
     }
-    #moon{
-        width:340px;
-        margin-top: 40px;
+
+    .form_left, .form_right {
+        width: 100%;
+    }
+    .no_rot:hover{
+        transition: none;
     }
 }
+
+
+/*--------------------------------FORM CONTACT MEDIA-------------------------------*/
+
+
+/*=======================================FORM=======================================*/
+
