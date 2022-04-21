@@ -65,14 +65,25 @@ nav{
 
 
 
-/*----------------3-------------UKRYCIE CHECKBOX I BURGERA------------------------*/
+/*----------------3-------------UKRYCIE CHECKBOX I BURGERA ZAMIANA IKON------------------------*/
     label, #burger{
         display: none;
     }
-/*----------------3-------------UKRYCIE CHECKBOX I BURGERA------------------------*/
+    .close{
+    display: none;
+}
+    .close{
+    width: 24px;
+    height: 24px;
+}
+/*----------------3-------------UKRYCIE CHECKBOX I BURGERA ZAMIANA IKON------------------------*/
 
 
 /*===============================USTAWIENIA HEADERA============================*/
+
+
+
+
 
 
 
@@ -167,13 +178,10 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.art{
     position: relative;
-    right: 150px;
-    padding: 50px;
-    z-index: 1;
+    right: 50px;
 }
+
 /*-----------------------------PRAWA STRONA ZDJĘCIE TYPA------------------------*/
 
 
@@ -269,7 +277,6 @@ footer{
 
 
 
-
 /*===============================USTAWIENIA HEADERA @MEDIA============================*/
 
 @media screen and (max-width: 768px) {
@@ -310,6 +317,13 @@ footer{
             top: 50px;
             width: 100%;
         }
+        #burger:checked ~ label .open{
+            display: none;
+        }
+
+        #burger:checked ~ label .close{
+        display: block;
+    }
 
         ul {
             flex-direction: column;
@@ -362,13 +376,8 @@ footer{
     .article_right{
         width: 100%;
         display: flex;
-    }
-    .art{
         position: relative;
-        right: 0;
-        width: 80%;
-        height: auto;
-        margin-top: 20px;
+        left: 0;
     }
 }
 /*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
@@ -394,3 +403,66 @@ footer{
 
 
 /*===============================USTAWIENIA FOOTER @MEDIA============================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#moon{
+    width: 400px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rocket{
+    padding: 50px;
+    position:absolute;
+    width:410px;
+    height:410px;
+    animation-name: spin;
+    animation:spin 5s linear infinite;
+}
+@keyframes spin{
+    0% { -webkit-transform: rotate(0deg);transform:rotate(0deg);}
+    25% { -webkit-transform: rotate(90deg);transform:rotate(90deg);}
+    50% { -webkit-transform: rotate(180deg);transform:rotate(180deg);}
+    75% { -webkit-transform: rotate(270deg);transform:rotate(270deg);}
+    100% { -webkit-transform: rotate(360deg);transform:rotate(360deg);}
+}
+@media screen and (max-width: 700px){
+    .rocket{
+        margin-top: 40px;
+        width:350px;
+        height:350px;
+    }
+    #moon{
+        width:340px;
+        margin-top: 40px;
+    }
+}
