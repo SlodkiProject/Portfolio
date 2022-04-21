@@ -369,6 +369,7 @@ footer{
     }
     .article_left{
         width: 100%;
+        margin-bottom: 30px;
     }
 
     .article_left h1{
@@ -397,13 +398,12 @@ footer{
         left: 0;
     }
     .rocket{
-        margin-top: 40px;
-        width:350px;
-        height:350px;
+        padding: 0;
+        width:250px;
+        height:250px;
     }
     #moon{
         width:340px;
-        margin-top: 40px;
     }
 }
 /*===============================USTAWIENIA SECTION IMIĘ NAZWISKO PIC @MEDIA============================*/
@@ -462,7 +462,6 @@ footer{
 
 
 /*======================================FORM========================================*/
-
 
 
 /*------------------------------USTAWIENIA KONTENERA---------------------------------*/
@@ -638,6 +637,10 @@ textarea{
     }
     .no_rot:hover{
         transition: none;
+    }
+    form{
+        position: relative;
+        left: 10px;
     }
 }
 
