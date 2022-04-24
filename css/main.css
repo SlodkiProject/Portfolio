@@ -84,7 +84,35 @@ nav{
 
 
 
+/*==================================USTAWIENIA WAVE====================================*/
 
+
+.wave{
+    position: relative;
+}
+
+
+.custom-shape-divider-bottom-1650818480 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650818480 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1px);
+    height: 70px;
+}
+
+.custom-shape-divider-bottom-1650818480 .shape-fill {
+    fill: #FFFFFF;
+}
+/*==================================USTAWIENIA WAVE====================================*/
 
 
 
@@ -108,7 +136,7 @@ nav{
     background: rgb(12,29,65);
     background: linear-gradient(90deg, rgba(12,29,65,1) 0%, rgba(4,13,33,1) 87%, rgba(4,13,33,1) 100%);
     display: flex;
-    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
+    padding-bottom: 50px;
 }
 
 .article_left, .article_right{
@@ -674,17 +702,16 @@ textarea{
 
 
 
-
-
-
-
-
 .head_card{
+    position: relative;
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 30px;
+    font-size: 1.4em;
+    color: rgba(30,134,237,0.84);
 }
+
 
 
 
@@ -692,19 +719,18 @@ textarea{
 
 
 .card{
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /*border*/
     flex-wrap: wrap;
-    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
 }
 .card_opt{
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
     width: 300px;
     height: 300px;
     /*border*/
@@ -712,8 +738,13 @@ textarea{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 }
+
+.card_opt:hover{
+
+}
+
+
 
 
 .opt_res{
@@ -723,12 +754,13 @@ textarea{
 
 
 .card_opt h1{
-    font-size: 2em;
+    font-size: 2.2em;
     padding: 5px;
+
 }
 
 .card_opt p{
-    font-size: 1.4em;
+    font-size: 1.6em;
     padding: 5px;
 }
 
@@ -744,3 +776,8 @@ textarea{
     }
 
 }
+
+
+
+
+
