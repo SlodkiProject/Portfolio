@@ -9,6 +9,7 @@
     html{
         font-size: .625em;
         font-family: 'Roboto', sans-serif;
+        scroll-behavior: smooth;
 }
 /*===========================RESET USTAWIEŃ PRZEGLĄDARKI=======================*/
 
@@ -18,12 +19,12 @@
 
 
 /*--------------1---------------USTAWIENIA HEADERA LOGO I NAWIGACJI------------------------*/
-    header{
+    header {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: rgb(12,29,65);
-        background: linear-gradient(90deg, rgba(12,29,65,1) 0%, rgba(4,13,33,1) 87%, rgba(4,13,33,1) 100%);
+        background: rgb(12, 29, 65);
+        background: linear-gradient(90deg, rgba(12, 29, 65, 1) 0%, rgba(4, 13, 33, 1) 87%, rgba(4, 13, 33, 1) 100%);
         font-family: Roboto, sans-serif;
         font-size: 1.3em;
         padding: 3px 0 0 0;
@@ -31,8 +32,8 @@
         position: sticky;
         top: 0;
         z-index: 2;
-
     }
+
 /*---------------1--------------USTAWIENIA HEADERA LOGO I NAWIGACJI------------------------*/
 
 
@@ -651,3 +652,95 @@ textarea{
 
 /*=======================================FORM=======================================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.head_card{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+
+
+
+
+
+.card{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*border*/
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 1px 2px 0;
+}
+.card_opt{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+    /*border*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.opt_res{
+    width: 200px;
+    height: 200px;
+}
+
+
+.card_opt h1{
+    font-size: 2em;
+    padding: 5px;
+}
+
+.card_opt p{
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+.card{
+    width: 100%;
+}
+    .card_opt{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 5px;
+    }
+
+}
