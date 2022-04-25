@@ -89,6 +89,7 @@ nav{
 
 .wave{
     position: relative;
+    top: 2px;
 }
 
 
@@ -476,22 +477,7 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*======================================FORM========================================*/
-
 
 /*------------------------------USTAWIENIA KONTENERA---------------------------------*/
 
@@ -503,23 +489,16 @@ footer{
     flex-wrap: wrap;
 }
 
-
-
-
-
 .form_left, .form_right{
     width: 50%;
     padding-top: 20px;
 }
 /*-------------------------------USTAWIENIA KONTENERA---------------------------------*/
 
-
 /*-------------------------------FORM CONTACT LEFT SITE--------------------------------*/
-
-
 .form_left{
     font-family: 'Roboto', sans-serif;
-    color: #0c1c40;
+    color: rgba(88,91,96,0.84);
     font-size: 1.2em;
     display: flex;
     flex-direction: column;
@@ -559,18 +538,12 @@ footer{
     padding: 5px;
 }
 
+.form_op{
+    opacity: 0.8;
+}
 /*-----------------------------FORM CONTACT LEFT SITE--------------------------------*/
 
-
-
-
-
-
-
-
 /*-------------------------------FORM CONTACT RIGHT SITE------------------------------*/
-
-
 .form_right{
     display: flex;
     justify-content: start;
@@ -589,14 +562,9 @@ footer{
     font-size: 2em;
 }
 
-
-
-
 .input_box{
     padding: 5px;
 }
-
-
 
 textarea{
     min-height: 110px;
@@ -607,9 +575,6 @@ textarea{
     font-size: 2.5em;
     resize: none;
 }
-
-
-
 
 .buttonn{
     margin-top: 20px;
@@ -624,36 +589,26 @@ textarea{
     margin-bottom: 20px;
     width: 120px;
 }
+
 .buttonn:hover{
     background: rgba(30,133,236,0.84);
     cursor: pointer;
 }
 
-
-
-
-
 .contact_us{
    font-size: 3em;
     text-transform: uppercase;
-    color: rgba(11,28,63,0.84);
+    color: rgba(88,91,96,0.84);
     font-weight: bold;
     padding-bottom: 20px;
 }
-
 
 .no_rot{
     display: block;
 }
 /*-----------------------------FORM CONTACT RIGHT SITE------------------------------*/
 
-
-
-
-
-
 /*-----------------------------FORM CONTACT MEDIA-----------------------------------*/
-
 
 @media screen and (max-width: 768px) {
     .container_form {
@@ -665,119 +620,130 @@ textarea{
     .form_left, .form_right {
         width: 100%;
     }
+
     .no_rot:hover{
         transition: none;
     }
+
     form{
         position: relative;
         left: 10px;
     }
 }
 
-
 /*--------------------------------FORM CONTACT MEDIA-------------------------------*/
-
 
 /*=======================================FORM=======================================*/
 
 
+/*=======================================FOOTER WAVE=======================================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.head_card{
+.footer_wave{
     position: relative;
-    text-align: center;
+    padding-top: 50px;
+    top: 2px;
+}
+
+.custom-shape-divider-bottom-1650891892 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1650891892 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1650891892 .shape-fill {
+    fill: #1E86ED;
+}
+/*=======================================FOOTER WAVE=======================================*/
+
+
+
+
+
+
+
+
+
+.about_me{
+    width: 80%;
     margin: auto;
-    padding: 30px;
-    font-size: 1.4em;
-    color: rgba(30,134,237,0.84);
+    display: flex;
+    /*border*/
+    flex-wrap: wrap;
+    padding: 80px 0 80px 0;
+
+}
+
+
+.about_me_left, .about_me_right{
+    width: 50%;
+    /*border*/
+    display: flex;
+}
+
+
+.about_me_right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
 
 
-
-
-
-.card{
-    width: 60%;
-    margin: auto;
+.about_me_left{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border*/
-    flex-wrap: wrap;
 }
-.card_opt{
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 40px;
-    width: 300px;
-    height: 300px;
-    /*border*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+.about_img{
+    width: 100%;
+    height: auto;
+}
+
+
+.about_txt h1{
+    padding: 30px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.4em;
+    text-align: center;
+    color: rgba(88,91,96,0.84);
+}
+
+.about_txt p{
+    padding: 30px 10px 30px 10px;
+    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    color: #6c7279;
     text-align: center;
 }
 
-.card_opt:hover{
-
-}
-
-
-
-
-.opt_res{
-    width: 200px;
-    height: 200px;
-}
-
-
-.card_opt h1{
-    font-size: 2.2em;
-    padding: 5px;
-
-}
-
-.card_opt p{
-    font-size: 1.6em;
-    padding: 5px;
-}
-
-
-@media screen and (max-width: 768px){
-.card{
-    width: 100%;
-}
-    .card_opt{
+@media screen and (max-width: 768px) {
+    .about_me {
         width: 100%;
-        height: 300px;
-        margin-bottom: 5px;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
+    .about_me_left, .about_me_right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about_img {
+        width: 270px;
+    }
 }
-
-
-
-
-
